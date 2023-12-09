@@ -21,7 +21,8 @@ class ContactFactory extends Factory
             'last_name' => fake()->lastName(),
             'email' => fake()->email(),
             'phone' => fake()->phoneNumber(),
-            'area_id' => fake()->numberBetween(1, 10)
+            'message' => fake()->paragraph(3),
+            'area_id' => fake()->numberBetween(1, 10),
         ];
     }
 }

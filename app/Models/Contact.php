@@ -15,7 +15,8 @@ class Contact extends Model
         'last_name',
         'email',
         'phone',
-        'area_id'
+        'area_id',
+        
     ];
 
     public function area():BelongsTo

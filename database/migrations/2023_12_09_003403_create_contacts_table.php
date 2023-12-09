@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('phone');
+            $table->text('message');
             $table->unsignedBigInteger('area_id');
             $table->foreign('area_id')->references('id')->on('areas');
-            $table->text('message');
             $table->timestamps();
         });
     }
